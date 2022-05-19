@@ -9,9 +9,15 @@ main() {
   var b = 6;
   var c = a + b;
   print("Phep + " + c.toString());
-
   print("Phep x: " + (a * b).toString());
-
   print("Phep /" + (a / b).toString());
   // print :  in text ra man hinh. c = int. c.toString()
+  var d = add(4, 5);
+  print("function " + d.toString());
+}
+
+// function + a b
+add(a, b) {
+  print("Ben trong function: a=" + a.toString() + " b=" + b.toString());
+  return a + b;
 }
