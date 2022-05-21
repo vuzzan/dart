@@ -1,6 +1,7 @@
 main() {
   // Hàm function chính của chương trình
   print("Chao ban, day la chuong trinh dau tien");
+  print("NGAY: 19");
 
   // Dong lenh nay ko chay
   // phep tinh +
@@ -15,6 +16,7 @@ main() {
   // print :  in text ra man hinh. c = int. c.toString()
   var d = add(4, 5);
   print("function " + d.toString());
+  print("NGAY: 20");
 
   print("2. Kieu boolean : TRUE, FALSE. ");
   var bl = (a == 6);
@@ -44,6 +46,22 @@ main() {
   }
 
   // 3. kieu du lieu tap hop
+  //
+  var listInt = [1, 2, 3, 14, 5, 6, 17, 8, 9, 10, 11];
+  print(listInt);
+  // tim so 5, trong dong listInt
+  var i = 0;
+  // listInt.length: tong so phan tu trong listInt =11
+  // i= 0: dieu kien dau -  i< 11: diem ket thuc -   // i++ ( i = i+1)
+  for (i = 0; i < listInt.length; i++) {
+    var value = listInt[i];
+    print("--- Vi tri i=" + i.toString() + " giatri: " + value.toString());
+    if (value == 5) {
+      print("TIM THAY ROI.Vi tri: " + i.toString());
+      // Break: STOP
+      break;
+    }
+  }
 }
 
 // function + a b
