@@ -50,18 +50,33 @@ main() {
   var listInt = [1, 2, 3, 14, 5, 6, 17, 8, 9, 10, 11];
   print(listInt);
   // tim so 5, trong dong listInt
-  var i = 0;
+  var index = findValue(listInt, 5);
+  if (index == -1) {
+    print("ko tim thay");
+  } else {
+    print("Tim thay o vi tri: " + index.toString());
+  }
+  //var i = 0;
   // listInt.length: tong so phan tu trong listInt =11
   // i= 0: dieu kien dau -  i< 11: diem ket thuc -   // i++ ( i = i+1)
-  for (i = 0; i < listInt.length; i++) {
-    var value = listInt[i];
-    print("--- Vi tri i=" + i.toString() + " giatri: " + value.toString());
-    if (value == 5) {
-      print("TIM THAY ROI.Vi tri: " + i.toString());
-      // Break: STOP
+}
+
+// findValue: ten function
+// Input: arr mang so int
+//        a: so can tim
+// output:vi tri tim thay, -1 neu ko tim thay
+// function:
+findValue(arr, a) {
+  var index = -1;
+  for (var i = 0; i < arr.length; i++) {
+    var value = arr[i];
+    if (value == a) {
+      index = i;
       break;
     }
   }
+  print("findValue " + index.toString());
+  return index;
 }
 
 // function + a b
