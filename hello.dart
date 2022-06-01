@@ -133,3 +133,14 @@ add(a, b) {
   print("Ben trong function: a=" + a.toString() + " b=" + b.toString());
   return a + b;
 }
+
+// Input: Arr
+// Output: index cua max value
+findMax(arr) {
+  // 1. Dat maxValue = MAX_INT
+  // 2. For tren toan bo array {
+  //     neu co value lon hon maxvalue => set lai max, luu giu gia tri index max
+  // }
+
+  // maxValue => so lon nhat
+}
