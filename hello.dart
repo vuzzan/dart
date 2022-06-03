@@ -2,11 +2,16 @@ main() {
   // Hàm function chính của chương trình
   print("Chao ban, day la chuong trinh dau tien");
   print("NGAY: 19");
-
   // Dong lenh nay ko chay
   // phep tinh +
   // variable
   print("1. Kieu du lieu int -> so nguyen");
+  int iSonguyen = 1 + 4;
+  // Double 4.5, 6.7 pi
+  double dbDouble = 4.5;
+  String strName2 = "Nghia Nghĩa";
+  bool bl2 = (1 != 1); //true, false
+
   var a = 5;
   var b = 6;
   var c = a + b;
